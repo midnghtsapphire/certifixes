@@ -83,7 +83,7 @@ certifixes --version
 certifixes init
 ```
 
-This creates `/etc/certifixes/certifixes.config.yaml` and a systemd unit file.
+This creates `certifixes.config.yaml` in your current working directory with sensible defaults.
 
 ### 3.2 Docker (Recommended)
 
