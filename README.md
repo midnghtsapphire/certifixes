@@ -126,7 +126,8 @@ All secrets (API keys, webhook URLs) are loaded from environment variables — n
 |---|---|
 | `CERTIFIXES_EMAIL` | Default contact email for all certs |
 | `CF_API_TOKEN` | Cloudflare API token (DNS-01 via Cloudflare) |
-| `AWS_ACCESS_KEY_ID` | AWS key (DNS-01 via Route 53) |
+| `AWS_ACCESS_KEY_ID` | AWS access key ID (DNS-01 via Route 53; requires `AWS_SECRET_ACCESS_KEY`). |
+| `AWS_SECRET_ACCESS_KEY` | AWS secret access key (DNS-01 via Route 53). |
 | `SLACK_WEBHOOK_URL` | Slack webhook for alerts |
 | `PAGERDUTY_ROUTING_KEY` | PagerDuty routing key |
 | `CERTIFIXES_DASHBOARD_SECRET` | Secret for web dashboard auth |
