@@ -248,7 +248,7 @@ The web dashboard runs on port `8080` by default.
 certifixes dashboard enable
 
 # Access
-open http://localhost:8080
+xdg-open http://localhost:8080
 ```
 
 For production, put it behind a reverse proxy with TLS:
