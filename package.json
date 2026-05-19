@@ -1,0 +1,15 @@
+{
+  "name": "certifixes",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["src/dashboard", "src/api"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w src/api\" \"npm run dev -w src/dashboard\"",
+    "build": "npm run build -w src/dashboard && npm run build -w src/api",
+    "test": "npm run test -w src/dashboard",
+    "lint": "npm run lint -w src/dashboard"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

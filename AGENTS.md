@@ -206,36 +206,35 @@ Before declaring work complete:
 ## Project-Specific Context
 
 ### What This Project Is
-Sessiono — session musician subscription platform. Users browse, book, and pay session musicians. Musicians list their services, set rates, and manage bookings.
+certifixes — automated SSL/TLS certificate management and repair tool. Monitors certificates across bare metal, Docker, and Kubernetes environments; auto-renews via ACME; and applies automated fixes for chain errors, OCSP misconfiguration, SANs mismatches, and expiry.
 
 ### Architecture
 ```
-app/                    # Expo Router file-based routing
-  (tabs)/               # Bottom tab navigation
-    index.tsx           # Home — browse featured musicians
-    search.tsx          # Search by instrument/genre
-    bookings.tsx        # My bookings list
-    profile.tsx         # User profile + subscription
-  auth/login.tsx        # Login/signup modal
-  musician/[id].tsx     # Musician detail + booking
-components/             # Reusable UI components
-lib/supabase.ts         # Supabase client with SecureStore
-constants/              # Theme, config
+src/
+  cli/              # CLI entry points (init, add, scan, issue, deploy, daemon)
+  core/             # Certificate diagnostics, ACME client, repair engine
+  providers/        # Let's Encrypt, ZeroSSL, Buypass, DigiCert adapters
+  servers/          # nginx, Apache, Caddy, HAProxy, Traefik deployment
+  dns/              # Cloudflare, Route53, GCloud, Azure, DigitalOcean DNS providers
+  alerts/           # Slack, email, PagerDuty, webhook integrations
+  daemon/           # Renewal scheduler and health check loop
+  dashboard/        # Web UI (React + Vite) for fleet-wide cert health
+  k8s/              # Kubernetes operator
 ```
 
 ### Key Commands
 ```bash
-npx expo start          # Dev server (scan QR with Expo Go)
-npx expo start --web    # Web dev server
-eas build --platform all  # Build for iOS + Android
-eas submit --platform ios  # Submit to App Store
+npm run dev         # Start CLI in development mode
+npm run build       # Compile TypeScript to dist/
+npm test            # Run test suite
+certifixes init     # Initialize config
+certifixes scan     # Scan cert status for a domain
+certifixes daemon   # Start renewal daemon
 ```
 
 ### Current State
-- UI scaffolding complete with dark cinematic theme
-- Demo data in place — needs Supabase integration
-- Auth screen built — needs Supabase auth wiring
-- Stripe subscription integration not started
-- Musician profile photos not implemented (use expo-image)
-- Push notifications not implemented
-- Search is static — needs Supabase full-text search
+- Repository scaffolded; ship-to-market documentation complete
+- Core implementation not yet started
+- See CHANGELOG.md for planned v0.1.0 features
+- See GO_TO_MARKET.md for launch strategy and pricing
+- See DEPLOYMENT_GUIDE.md for production deployment steps
