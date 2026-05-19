@@ -12,12 +12,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - Project scaffolding and repository structure
 - Universal agent instructions (`AGENTS.md`)
 - All Rights Reserved license
+- Ship-to-market documentation: README, DEPLOYMENT_GUIDE, GO_TO_MARKET, CHANGELOG, `.env.example`, `.gitignore`
+- Web dashboard UI (`src/dashboard/`) — React 18 + Vite + Tailwind CSS; marketing landing page and 6 dashboard pages
+- Express API skeleton (`src/api/`) — `/api/certificates`, `/api/alerts`, `/api/renewals` endpoints
 
----
-
-## [0.1.0] — Planned
-
-### Added
+### Planned for v0.1.0
 - CLI entry point: `certifixes init`, `add`, `scan`, `daemon`
 - ACME v2 certificate issuance via Let's Encrypt, ZeroSSL, and Buypass
 - HTTP-01, DNS-01, and TLS-ALPN-01 challenge support
@@ -28,12 +27,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - `certifixes.config.yaml` configuration file with environment variable interpolation
 - Slack, email, PagerDuty, and generic webhook alerting
 - Cloudflare, Route 53, Google Cloud DNS, Azure DNS, and DigitalOcean DNS providers
-- Web dashboard for fleet-wide certificate health monitoring
 - Docker image (`ghcr.io/midnghtsapphire/certifixes`)
 - Kubernetes operator with Ingress annotation support
-- `.env.example` with all required environment variable documentation
 
 ---
 
-[Unreleased]: https://github.com/midnghtsapphire/certifixes/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/midnghtsapphire/certifixes/releases/tag/v0.1.0
+[Unreleased]: https://github.com/midnghtsapphire/certifixes/compare/HEAD

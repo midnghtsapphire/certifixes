@@ -1,5 +1,9 @@
 # certifixes
 
+> **⚠️ Status: Pre-release — under active development**
+>
+> certifixes is not yet available for install. The commands, Docker image, and Kubernetes operator documented below describe the planned v0.1.0 release. Track progress in [CHANGELOG.md](./CHANGELOG.md) and [open issues](https://github.com/midnghtsapphire/certifixes/issues). Stars and watches welcome — the dashboard UI is already live in this repo under `src/dashboard/`.
+
 **Automated SSL/TLS certificate management and repair for production systems.**
 
 certifixes monitors your certificates, catches problems before they cause outages, and fixes misconfigurations automatically — so you never wake up to a cert emergency again.
