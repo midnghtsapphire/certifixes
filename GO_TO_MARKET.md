@@ -23,19 +23,19 @@ certifixes is an automated SSL/TLS certificate management and repair tool target
 SSL/TLS certificate incidents are one of the most common and avoidable production failures:
 
 - The average enterprise manages **hundreds to thousands** of certificates across servers, services, and CDN origins
-- Certificate-related outages cost companies between $5,000–$740,000 per hour depending on business size (Ponemon Institute)
-- High-profile outages from cert failures: LinkedIn (2021), Microsoft Teams (2020), Spotify (2023) — all traced to expired or misconfigured certificates
-- 57% of organizations have experienced a certificate-related outage in the last 24 months (AppViewX survey, 2024)
-- The average time to discover and remediate a cert incident is **4.2 hours**
+- Certificate-related outages can cost companies between $5,000–$740,000 per hour depending on business size (Ponemon Institute)
+- Certificate failures have caused multiple high-visibility service disruptions across the industry; include specific company examples only with verified citations
+- Internal positioning estimate: a significant share of organizations have experienced a certificate-related outage within the last 24 months; replace with a cited survey figure before external distribution
+- Internal operating assumption: average time to discover and remediate a certificate incident is **~4.2 hours**; replace with a verifiable source before external distribution
 
 ### 1.2 Market Size
 
-| Segment | Estimate |
+| Segment | Preliminary estimate* |
 |---|---|
-| Global PKI/certificate management market (2025) | ~$2.8B |
-| Projected CAGR through 2030 | 18.5% |
-| Addressable DevOps tooling spend (annual) | ~$8.4B |
-| Target serviceable segment (SMB/mid-market DevOps) | ~$450M |
+| Global PKI/certificate management market (2025) | ~\$2.8B* |
+| Projected CAGR through 2030 | ~18.5%* |
+| Addressable DevOps tooling spend (annual) | ~\$8.4B* |
+| Target serviceable segment (SMB/mid-market DevOps, internal estimate) | ~\$450M* |
 
 ### 1.3 Trends Driving Demand
 
