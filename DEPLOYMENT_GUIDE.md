@@ -107,7 +107,7 @@ services:
     image: ghcr.io/midnghtsapphire/certifixes:latest
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8080:8080"
     volumes:
       - /etc/certifixes:/config
       - /etc/letsencrypt:/certs
