@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { fleetStats } from '../lib/mockData';
+import pkg from '../../package.json';
 
 const navItems = [
   { to: '/dashboard', label: 'Overview', icon: '◉', exact: true },
@@ -57,7 +58,7 @@ export default function Sidebar() {
       </nav>
 
       <div className="p-3 border-t border-gray-800">
-        <div className="text-xs text-gray-500">v0.1.0 · MIT License</div>
+        <div className="text-xs text-gray-500">v{pkg.version} · MIT License</div>
       </div>
     </aside>
   );
