@@ -37,4 +37,14 @@ describe('StatusBadge', () => {
     const { container } = render(<StatusBadge status="expired" />);
     expect(container.firstChild).toHaveClass('bg-red-900');
   });
+
+  it('applies sm size classes by default', () => {
+    const { container } = render(<StatusBadge status="healthy" />);
+    expect(container.firstChild).toHaveClass('text-xs', 'px-2', 'py-0.5');
+  });
+
+  it('applies md size classes when size="md"', () => {
+    const { container } = render(<StatusBadge status="healthy" size="md" />);
+    expect(container.firstChild).toHaveClass('text-sm', 'px-3', 'py-1');
+  });
 });
